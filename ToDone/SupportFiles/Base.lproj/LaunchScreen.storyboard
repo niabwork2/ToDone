@@ -3,6 +3,7 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,11 +20,19 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="todone-logo" translatesAutoresizingMaskIntoConstraints="NO" id="0PY-sH-jp9">
                                 <rect key="frame" x="91" y="349" width="208" height="147"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ToDone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIN-Kx-Fko">
+                                <rect key="frame" x="142" y="504" width="106.33333333333331" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" name="DarkPurple"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="BIN-Kx-Fko" firstAttribute="centerX" secondItem="0PY-sH-jp9" secondAttribute="centerX" id="1dX-EQ-awN"/>
                             <constraint firstItem="0PY-sH-jp9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="305" id="GzD-kV-Xrq"/>
+                            <constraint firstItem="BIN-Kx-Fko" firstAttribute="top" secondItem="0PY-sH-jp9" secondAttribute="bottom" constant="8" id="Rna-7H-m21"/>
                             <constraint firstItem="0PY-sH-jp9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="TRw-qy-a9b"/>
                             <constraint firstItem="0PY-sH-jp9" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="0.5" id="eRe-gi-yJ2"/>
                             <constraint firstItem="0PY-sH-jp9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="91" id="vxr-dL-I1u"/>
@@ -37,6 +46,9 @@
     </scenes>
     <resources>
         <image name="todone-logo" width="512" height="512"/>
+        <namedColor name="DarkPurple">
+            <color red="0.40392156862745099" green="0.25882352941176473" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
